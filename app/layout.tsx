@@ -15,6 +15,7 @@ export const metadata: Metadata = {
 		default: "Ayush Chugh",
 		template: "%s | Ayush Chugh",
 	},
+	
 	description:
 		"Passionate full stack developer from India. On the way to master programming",
 	openGraph: {
