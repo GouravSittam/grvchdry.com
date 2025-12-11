@@ -4,6 +4,8 @@
 
 ### Personal Portfolio & Blog
 
+A modern, fast, and responsive portfolio website built with Next.js 14, TypeScript, and Bun. Features MDX blog support, dark mode, SEO optimization, GitHub contribution charts, and Docker deployment. Showcasing professional work, tech stack, and technical writing.
+
 [![Next.js](https://img.shields.io/badge/Next.js-14.2-black?style=for-the-badge&logo=next.js)](https://nextjs.org/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.3-blue?style=for-the-badge&logo=typescript)](https://www.typescriptlang.org/)
 [![Bun](https://img.shields.io/badge/Bun-1.0-f472b6?style=for-the-badge&logo=bun)](https://bun.sh/)
