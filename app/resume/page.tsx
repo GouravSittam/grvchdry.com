@@ -10,8 +10,8 @@ export const metadata: Metadata = {
 	openGraph: {
 		type: "article",
 		url: `https://ayushchugh.com/resume`,
-		title: "Ayush Chugh’s Resume",
-		siteName: "Ayush Chugh's Portfolio",
+		title: "Gourav Chaudhary's Resume",
+		siteName: "Gourav Chaudhary's Portfolio",
 		description:
 			"Detailed resume of Ayush Chugh, Full-Stack Developer, with work experience, projects, and educational background.",
 		images: [
@@ -19,15 +19,15 @@ export const metadata: Metadata = {
 				url: `https://cdn.ayushchugh.com/open-graph/business-card.png`,
 				width: 1200,
 				height: 630,
-				alt: "Ayush Chugh's Resume",
+				alt: "Gourav Chaudhary's Resume",
 			},
 		],
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Ayush Chugh's Resume",
+		title: "Gourav Chaudhary's Resume",
 		description:
-			"Check out Ayush Chugh’s Full-Stack Developer resume, showcasing professional contributions and achievements.",
+			"Check out Gourav Chaudhary’s Full-Stack Developer resume, showcasing professional contributions and achievements.",
 		images: ["https://cdn.ayushchugh.com/open-graph/business-card.png"],
 		creator: "@aayushchugh",
 		creatorId: "@aayushchugh",
