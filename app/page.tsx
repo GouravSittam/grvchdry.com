@@ -53,7 +53,7 @@ export default function Page() {
 
       <Separator />
 
-{/* Professional Work */}
+      {/* Professional Work */}
       <div className="mb-8 prose prose-neutral dark:prose-invert">
         <h2>Professional Work</h2>
         <p>
@@ -121,6 +121,69 @@ export default function Page() {
         </p>
       </div>
 
+      <Separator />
+
+      {/* Tech Stack */}
+      <div className="mb-8 prose prose-neutral dark:prose-invert">
+        <h2>Tech Stack 🛠️</h2>
+        <p>Technologies I use to build modern, scalable applications:</p>
+        <div className="not-prose space-y-6">
+          <div>
+            <h3 className="font-medium text-base mb-3 text-neutral-900 dark:text-neutral-100">
+              Frontend Development
+            </h3>
+            <div className="flex flex-wrap gap-2">
+              <Badge href="https://react.dev/">React</Badge>
+              <Badge href="https://nextjs.org/">Next.js</Badge>
+              <Badge href="https://www.typescriptlang.org/">TypeScript</Badge>
+              <Badge href="https://tailwindcss.com/">Tailwind CSS</Badge>
+              <Badge href="https://redux.js.org/">Redux</Badge>
+              <Badge href="https://mui.com/">Material UI</Badge>
+              <Badge href="https://ui.shadcn.com/">Shadcn/ui</Badge>
+            </div>
+          </div>
+
+          <div>
+            <h3 className="font-medium text-base mb-3 text-neutral-900 dark:text-neutral-100">
+              Backend Development
+            </h3>
+            <div className="flex flex-wrap gap-2">
+              <Badge href="https://nodejs.org/">Node.js</Badge>
+              <Badge href="https://expressjs.com/">Express.js</Badge>
+              <Badge href="https://www.postgresql.org/">PostgreSQL</Badge>
+              <Badge href="https://www.mongodb.com/">MongoDB</Badge>
+              <Badge href="https://www.prisma.io/">Prisma</Badge>
+            </div>
+          </div>
+
+          <div>
+            <h3 className="font-medium text-base mb-3 text-neutral-900 dark:text-neutral-100">
+              DevOps & Cloud
+            </h3>
+            <div className="flex flex-wrap gap-2">
+              <Badge href="https://www.docker.com/">Docker</Badge>
+              <Badge href="https://aws.amazon.com/">AWS</Badge>
+              <Badge href="https://vercel.com/">Vercel</Badge>
+              <Badge href="https://git-scm.com/">Git</Badge>
+              <Badge href="https://github.com/">GitHub</Badge>
+			  <Badge href="https://railway.app/">Railway</Badge>
+            </div>
+          </div>
+
+          <div>
+            <h3 className="font-medium text-base mb-3 text-neutral-900 dark:text-neutral-100">
+              Tools & Services
+            </h3>
+            <div className="flex flex-wrap gap-2">
+              <Badge href="https://stripe.com/">Stripe</Badge>
+              <Badge href="https://code.visualstudio.com/">VS Code</Badge>
+              <Badge href="https://www.postman.com/">Postman</Badge>
+              <Badge href="https://www.figma.com/">Figma</Badge>
+            </div>
+          </div>
+        </div>
+      </div>
+      <Separator />
       {/* <Separator />
 
       <div className="mb-8 prose prose-neutral dark:prose-invert">
