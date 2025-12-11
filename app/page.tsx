@@ -43,7 +43,7 @@ export default function Page() {
 		<section>
 			<header className="mb-6">
 				<h1 className='font-medium text-2xl mb-2 tracking-tight font-["monospace"]'>
-					Sup, I'm Ayush Chugh 👋
+					Sup, I'm Gourav Chaudhary 👋
 				</h1>
 				<p className="text-lg prose prose-neutral dark:prose-invert">
 					I'm a Full Stack Web Developer from Mohali, India, trying to make the
