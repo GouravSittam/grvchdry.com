@@ -7,27 +7,27 @@ import Separator from "./components/separator";
 import GitHubCalendar from "react-github-calendar";
 
 export const metadata: Metadata = {
-	title: "Ayush Chugh",
+	title: "Gourav Chaudhary",
 	description:
 		"I'm a Full Stack Web Developer from India, trying to make the internet a bit cooler one website at a time.",
 	openGraph: {
-		title: "Ayush Chugh",
+		title: "Gourav Chaudhary",
 		description:
 			"I'm a Full Stack Web Developer from India, trying to make the internet a bit cooler one website at a time.",
 		url: "https://ayushchugh.com",
-		siteName: "Ayush Chugh's Portfolio",
+		siteName: "Gourav Chaudhary Portfolio",
 		images: [
 			{
 				url: "https://cdn.ayushchugh.com/open-graph/business-card.png",
 				height: 630,
-				alt: "Ayush Chugh",
+				alt: "Gourav Chaudhary",
 			},
 		],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Ayush Chugh",
+		title: "Gourav Chaudhary",
 		description:
 			"I'm a Full Stack Web Developer from India, trying to make the internet a bit cooler one website at a time.",
 		images: ["https://cdn.ayushchugh.com/open-graph/business-card.png"],
@@ -155,7 +155,7 @@ export default function Page() {
 
 			<div className="mb-8 prose prose-neutral dark:prose-invert">
 				<h2>GitHub Contributions</h2>
-				<GitHubCalendar username="aayushchugh" />
+				<GitHubCalendar username="GouravSittam" />
 			</div>
 
 			<Separator />
