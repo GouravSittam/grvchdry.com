@@ -126,7 +126,7 @@ export default function Page() {
       {/* Tech Stack */}
       <div className="mb-8 prose prose-neutral dark:prose-invert">
         <h2>Tech Stack 🛠️</h2>
-        <p>Technologies I use to build modern, scalable applications:</p>
+        {/* <p>Technologies I use to build modern, scalable applications:</p> */}
         <div className="not-prose space-y-6">
           <div>
             <h3 className="font-medium text-base mb-3 text-neutral-900 dark:text-neutral-100">
