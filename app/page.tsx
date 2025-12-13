@@ -166,6 +166,7 @@ export default function Page() {
               <Badge href="https://vercel.com/">Vercel</Badge>
               <Badge href="https://git-scm.com/">Git</Badge>
               <Badge href="https://github.com/">GitHub</Badge>
+              <Badge href="https://puppet.com/">Puppet</Badge>
 			  <Badge href="https://railway.app/">Railway</Badge>
             </div>
           </div>
