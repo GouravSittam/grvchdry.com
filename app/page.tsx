@@ -56,7 +56,8 @@ export default function Page() {
       {/* Professional Work */}
       <div className="mb-8 prose prose-neutral dark:prose-invert">
         <h2>Professional Work</h2>
-        <p>
+        <p>Coming soon...</p>
+        {/* <p>
           I specialize in creating user-friendly digital experiences. Currently,
           I'm the <strong>Co-founder & CTO</strong> at{" "}
           <span className="not-prose">
@@ -118,7 +119,7 @@ export default function Page() {
           , where I developed internal dashboard tools and created landing pages
           for their investment platform. For more details about my experience,
           check out my <Link href="/resume">resume</Link>.
-        </p>
+        </p> */}
       </div>
 
       <Separator />
