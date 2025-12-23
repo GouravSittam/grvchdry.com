@@ -12,8 +12,8 @@ import Footer from "./components/footer";
 export const metadata: Metadata = {
   metadataBase: new URL("https://ayushchugh.com/"),
   title: {
-    default: "Ayush Chugh",
-    template: "%s | Ayush Chugh",
+    default: "Gourav Chaudhary",
+    template: "%s | Gourav Chaudhary",
   },
 
   description:
