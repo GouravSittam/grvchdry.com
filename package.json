@@ -1,14 +1,14 @@
 {
-  "name": "grvchdry.com",
+  "name": "ayushchugh.com",
   "private": true,
   "scripts": {
-    "dev": "bun run next dev",
-    "build": "bun run next build",
-    "build-only": "bun run next build",
-    "start": "bun run next start",
-    "setup": "bun run ./setup.mjs",
-    "format": "bun biome format --write ./app",
-    "lint": "bun biome lint --write ./app"
+    "dev": "next dev",
+    "build": "next build",
+    "build-only": "next build",
+    "start": "next start",
+    "setup": "node ./setup.mjs",
+    "format": "pnpm biome format --write ./app",
+    "lint": "pnpm biome lint --write ./app"
   },
   "dependencies": {
     "@next/third-parties": "^14.2.11",

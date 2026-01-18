@@ -2,16 +2,29 @@ import type { Metadata } from "next";
 import WorkExperienceItem from "../components/work-experience-item";
 import EducationItem from "../components/education-item";
 import VolunteeringItem from "../components/volunteer-item";
+import { config } from "../config/config";
 
 export const metadata: Metadata = {
+	metadataBase: new URL("https://ayushchugh.com"),
 	title: "Resume",
 	description:
-		"A summary of Ayush Chugh’s corporate contributions, skills, and experience as a Full-Stack Developer, including work with Tap Invest, Shri Property, and A2INFINITE.",
+		"A summary of Ayush Chugh's corporate contributions, skills, and experience as a Full-Stack Developer, including work with Tap Invest, Shri Property, and A2INFINITE.",
+	keywords: [
+		"Ayush Chugh Resume",
+		"Full Stack Developer Resume",
+		"Web Developer CV",
+		"React Developer Resume",
+		"Software Engineer Resume",
+		"Work Experience",
+	],
+	alternates: {
+		canonical: "/resume",
+	},
 	openGraph: {
 		type: "article",
 		url: `https://ayushchugh.com/resume`,
-		title: "Gourav Chaudhary's Resume",
-		siteName: "Gourav Chaudhary's Portfolio",
+		title: "Ayush Chugh’s Resume",
+		siteName: "Ayush Chugh's Portfolio",
 		description:
 			"Detailed resume of Ayush Chugh, Full-Stack Developer, with work experience, projects, and educational background.",
 		images: [
@@ -19,15 +32,15 @@ export const metadata: Metadata = {
 				url: `https://cdn.ayushchugh.com/open-graph/business-card.png`,
 				width: 1200,
 				height: 630,
-				alt: "Gourav Chaudhary's Resume",
+				alt: "Ayush Chugh's Resume",
 			},
 		],
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Gourav Chaudhary's Resume",
+		title: "Ayush Chugh's Resume",
 		description:
-			"Check out Gourav Chaudhary’s Full-Stack Developer resume, showcasing professional contributions and achievements.",
+			"Check out Ayush Chugh’s Full-Stack Developer resume, showcasing professional contributions and achievements.",
 		images: ["https://cdn.ayushchugh.com/open-graph/business-card.png"],
 		creator: "@aayushchugh",
 		creatorId: "@aayushchugh",
@@ -42,7 +55,7 @@ const resumeData = {
 			company: "Ravix Studio",
 			logo: "https://cdn.ayushchugh.com/logos/ravix-dark.png",
 			location: "On-site",
-			website: "https://ravixstudio.com/",
+			website: config.companies.ravixStudio,
 			positions: [
 				{
 					role: "Co-founder & CTO",
@@ -65,7 +78,7 @@ const resumeData = {
 			company: "Avenue Ticketing, Inc.",
 			logo: "https://cdn.ayushchugh.com/logos/avenue.jpeg",
 			location: "Remote",
-			website: "https://avenueticket.com/",
+			website: config.companies.avenueTicketing,
 			positions: [
 				{
 					role: "Team Lead",
@@ -116,7 +129,7 @@ const resumeData = {
 			company: "Vibranium Soft",
 			logo: "https://cdn.ayushchugh.com/logos/vibraniumsoft.jpeg",
 			location: "Remote",
-			website: "https://vibraniumsoft.com",
+			website: config.companies.vibraniumSoft,
 			positions: [
 				{
 					role: "Frontend Developer",
@@ -145,7 +158,7 @@ const resumeData = {
 			company: "Keizer Works",
 			logo: "https://cdn.ayushchugh.com/logos/keizer.svg",
 			location: "Remote",
-			website: "https://keizerworks.com/",
+			website: config.companies.keizerWorks,
 			positions: [
 				{
 					role: "SDE",
@@ -173,7 +186,7 @@ const resumeData = {
 			company: "Tap Invest",
 			logo: "https://cdn.ayushchugh.com/logos/tapico.png",
 			location: "Remote",
-			website: "https://tapinvest.in/",
+			website: config.companies.tapInvest,
 			positions: [
 				{
 					role: "Frontend Developer",
@@ -199,7 +212,7 @@ const resumeData = {
 			company: "Shri Property",
 			logo: "https://cdn.ayushchugh.com/logos/shriProperty.png",
 			location: "Remote",
-			website: "https://shriproperty.com",
+			website: config.companies.shriProperty,
 			positions: [
 				{
 					role: "Full-Stack Developer",

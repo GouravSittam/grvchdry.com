@@ -7,7 +7,7 @@ services:
       - "3001:3000"
     expose:
       - "3000"
-    command: "bun run start"
+    command: "npm start"
     environment:
       NODE_ENV: production
     env_file:

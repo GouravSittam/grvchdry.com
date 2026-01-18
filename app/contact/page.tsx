@@ -4,37 +4,42 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Separator from "../components/separator";
 import { EnvelopeSimple } from "@phosphor-icons/react/dist/ssr";
+import { config } from "../config/config";
 
-// export const metadata: Metadata = {
-// 	title: "Contact",
-// 	description: "Get in touch with Ayush Chugh via email or schedule a meet.",
-// 	openGraph: {
-// 		title: "Contact Ayush Chugh",
-// 		description:
-// 			"Find and connect with Ayush Chugh via email or book a meeting.",
-// 		url: "https://ayushchugh.com/contact",
-// 		siteName: "Ayush Chugh's Portfolio",
-// 		images: [
-// 			{
-// 				url: "https://cdn.ayushchugh.com/open-graph/business-card.png",
-// 				width: 1200,
-// 				height: 630,
-// 				alt: "Contact Ayush Chugh",
-// 			},
-// 		],
-// 		type: "website",
-// 	},
-// 	twitter: {
-// 		card: "summary_large_image",
-// 		title: "Contact Ayush Chugh",
-// 		description: "Connect with Ayush Chugh via email or schedule a meet.",
-// 		images: ["https://cdn.ayushchugh.com/open-graph/business-card.png"],
-// 		creator: "@aayushchugh",
-// 		creatorId: "@aayushchugh",
-// 		site: "@aayushchugh",
-// 		siteId: "@aayushchugh",
-// 	},
-// };
+export const metadata: Metadata = {
+	metadataBase: new URL("https://ayushchugh.com"),
+	title: "Contact",
+	description: "Get in touch with Ayush Chugh via email or schedule a meet.",
+	alternates: {
+		canonical: "/contact",
+	},
+	openGraph: {
+		title: "Contact Ayush Chugh",
+		description:
+			"Find and connect with Ayush Chugh via email or book a meeting.",
+		url: "https://ayushchugh.com/contact",
+		siteName: "Ayush Chugh's Portfolio",
+		images: [
+			{
+				url: "https://cdn.ayushchugh.com/open-graph/business-card.png",
+				width: 1200,
+				height: 630,
+				alt: "Contact Ayush Chugh",
+			},
+		],
+		type: "website",
+	},
+	twitter: {
+		card: "summary_large_image",
+		title: "Contact Ayush Chugh",
+		description: "Connect with Ayush Chugh via email or schedule a meet.",
+		images: ["https://cdn.ayushchugh.com/open-graph/business-card.png"],
+		creator: "@aayushchugh",
+		creatorId: "@aayushchugh",
+		site: "@aayushchugh",
+		siteId: "@aayushchugh",
+	},
+};
 
 export default function ContactPage() {
 	return (
@@ -49,29 +54,32 @@ export default function ContactPage() {
 				<div className="flex items-center mb-4">
 					<EnvelopeSimple size={24} />
 					<a
-						href="mailto:gouravsittam@gmail.com"
+						href={`mailto:${config.socials.email}`}
 						className="underline text-sm ml-1"
 					>
-						gouravsittam@gmail.com
+						{config.socials.email}
 					</a>
 				</div>
 
 				<Separator />
 
 				{/* Meeting Schedule Option */}
-				{/* <h2 className="font-medium text-2xl mb-6 tracking-tight font-['monospace']">
+				<h2 className="font-medium text-2xl mb-6 tracking-tight font-['monospace']">
 					Want to chat? Schedule a 1:1 with me!
 				</h2>
-				<div>
+				<p className="mb-6">
+					Book a time that works for you directly through Topmate:
+				</p>
+				<div className="not-prose mb-8">
 					<a
-						href="https://calendar.google.com/calendar/appointments/schedules/AcZssZ32m0Ha13-Djq7bDeqBFdEgjmkBLk3uIF9LGwK2eIrl1BGBVxBAhqnpYj7ealqSNG0JYpSUTikB?gv=true"
+						href={config.socials.topmate}
 						target="_blank"
 						rel="noopener noreferrer"
-						className="underline text-sm"
+						className="inline-flex items-center gap-2 px-6 py-3 bg-neutral-900 dark:bg-neutral-100 text-white dark:text-neutral-900 rounded-lg font-medium hover:bg-neutral-700 dark:hover:bg-neutral-300 transition-colors"
 					>
-						Schedule a meet
+						Schedule a meeting →
 					</a>
-				</div> */}
+				</div>
 			</div>
 		</section>
 	);

@@ -1,31 +1,44 @@
 import {
+	DiscordLogo,
 	EnvelopeSimple,
 	GithubLogo,
 	LinkedinLogo,
+	RssSimple,
 	XLogo,
 } from "@phosphor-icons/react/dist/ssr";
 import type { FC } from "react";
+import { config } from "../config/config";
 
-const socials = [
+const socialLinks = [
 	{
 		name: "Email",
-		url: "mailto:gouravsittam@gmail.com",
+		url: `mailto:${config.socials.email}`,
 		logo: EnvelopeSimple,
 	},
 	{
 		name: "GitHub",
-		url: "https://github.com/gouravsittam",
+		url: config.socials.github,
 		logo: GithubLogo,
 	},
 	{
 		name: "X",
-		url: "https://x.com/Gouravv_c",
+		url: config.socials.twitter,
 		logo: XLogo,
 	},
 	{
 		name: "LinkedIn",
-		url: "https://www.linkedin.com/in/gouravsittam/",
+		url: config.socials.linkedin,
 		logo: LinkedinLogo,
+	},
+	{
+		name: "Discord",
+		url: config.socials.discord,
+		logo: DiscordLogo,
+	},
+	{
+		name: "RSS Feed",
+		url: "/rss",
+		logo: RssSimple,
 	},
 ];
 
@@ -34,7 +47,7 @@ const Footer: FC = () => {
 		<>
 			<footer className="mt-8 flex justify-center">
 				<ul className="flex gap-4">
-					{socials.map((social, index) => (
+					{socialLinks.map((social, index) => (
 						<li key={index}>
 							<a
 								href={social.url}
