@@ -64,7 +64,7 @@ export default function ContactPage() {
 				<Separator />
 
 				{/* Meeting Schedule Option */}
-				<h2 className="font-medium text-2xl mb-6 tracking-tight font-['monospace']">
+				{/* <h2 className="font-medium text-2xl mb-6 tracking-tight font-['monospace']">
 					Want to chat? Schedule a 1:1 with me!
 				</h2>
 				<p className="mb-6">
@@ -79,7 +79,7 @@ export default function ContactPage() {
 					>
 						Schedule a meeting →
 					</a>
-				</div>
+				</div> */}
 			</div>
 		</section>
 	);

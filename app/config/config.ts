@@ -1,6 +1,6 @@
 export const config = {
 	profile: {
-		codingStartDate: "2020-01-01", // When you started coding
+		codingStartDate: "2023-01-01", // When you started coding
 		professionalStartDate: "2022-01-01", // When you started working on production apps
 		availableForFreelance: true,
 	},
@@ -8,7 +8,7 @@ export const config = {
 		{ path: "/", name: "Home" },
 		{ path: "/projects", name: "Projects" },
 		{ path: "/resume", name: "Resume" },
-		{ path: "/community", name: "Community" },
+		// { path: "/community", name: "Community" },
 		{ path: "/contact", name: "Contact" },
 		{ path: "/blog", name: "Blog" },
 	],
@@ -24,10 +24,10 @@ export const config = {
 		a2infinite: "https://a2infinite.com",
 	},
 	socials: {
-		email: "hey@ayushchugh.com",
-		github: "https://github.com/aayushchugh",
-		twitter: "https://x.com/aayushchugh",
-		linkedin: "https://www.linkedin.com/in/aayushchugh/",
+		email: "gouravsittam@gmail.com",
+		github: "https://github.com/GouravSittam",
+		twitter: "https://x.com/Gouravv_c",
+		linkedin: "https://www.linkedin.com/in/gouravsittam/",
 		discord: "https://discord.gg/wydHwZNu8W",
 		community: "/community",
 		topmate: "https://topmate.io/aayushchugh",

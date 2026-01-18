@@ -30,11 +30,11 @@ const socialLinks = [
 		url: config.socials.linkedin,
 		logo: LinkedinLogo,
 	},
-	{
-		name: "Discord",
-		url: config.socials.discord,
-		logo: DiscordLogo,
-	},
+	// {
+	// 	name: "Discord",
+	// 	url: config.socials.discord,
+	// 	logo: DiscordLogo,
+	// },
 	{
 		name: "RSS Feed",
 		url: "/rss",
