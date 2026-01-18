@@ -21,7 +21,7 @@ export function generateSEOMetadata({
 }: SEOMetadataProps): Metadata {
 	const baseUrl = "https://ayushchugh.com";
 	const fullUrl = `${baseUrl}${canonical}`;
-	const fullTitle = title === "Ayush Chugh" ? title : `${title} | Ayush Chugh`;
+	const fullTitle = title === "Gourav Chaudhary" ? title : `${title} | Gourav Chaudhary`;
 
 	const metadata: Metadata = {
 		metadataBase: new URL(baseUrl),
@@ -35,7 +35,7 @@ export function generateSEOMetadata({
 			title: fullTitle,
 			description,
 			url: fullUrl,
-			siteName: "Ayush Chugh's Portfolio",
+			siteName: "Gourav Chaudhary's Portfolio",
 			images: [
 				{
 					url: ogImage,
@@ -52,8 +52,8 @@ export function generateSEOMetadata({
 			title: fullTitle,
 			description,
 			images: [ogImage],
-			creator: "@aayushchugh",
-			site: "@aayushchugh",
+			creator: "@Gouravv_c",
+			site: "@Gouravv_c",
 		},
 		robots: {
 			index: true,
@@ -73,7 +73,7 @@ export function generateSEOMetadata({
 
 // Common keywords across the site
 export const commonKeywords = [
-	"Ayush Chugh",
+	"Gourav Chaudhary",
 	"Full Stack Developer",
 	"Web Developer",
 	"React",

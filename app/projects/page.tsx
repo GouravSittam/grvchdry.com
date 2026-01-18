@@ -5,9 +5,9 @@ export const metadata: Metadata = {
 	metadataBase: new URL("https://ayushchugh.com"),
 	title: "Projects",
 	description:
-		"Explore Ayush Chugh's projects, including Shriproperty, A2INFINITE, Worldtravels, and various open-source contributions.",
+		"Explore Gourav Chaudhary's projects, including Shriproperty, A2INFINITE, Worldtravels, and various open-source contributions.",
 	keywords: [
-		"Ayush Chugh Projects",
+		"Gourav Chaudhary Projects",
 		"Web Development Projects",
 		"React Projects",
 		"Next.js Projects",
@@ -19,11 +19,11 @@ export const metadata: Metadata = {
 		canonical: "/projects",
 	},
 	openGraph: {
-		title: "Ayush Chugh's Projects",
+		title: "Gourav Chaudhary's Projects",
 		description:
-			"Discover the latest projects built by Ayush Chugh, including web development and open-source contributions.",
+			"Discover the latest projects built by Gourav Chaudhary, including web development and open-source contributions.",
 		url: "https://ayushchugh.com/projects",
-		siteName: "Ayush Chugh's Portfolio",
+		siteName: "Gourav Chaudhary's Portfolio",
 		images: [
 			{
 				url: "https://cdn.ayushchugh.com/open-graph/business-card.png",
@@ -36,14 +36,14 @@ export const metadata: Metadata = {
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Ayush Chugh's Projects",
+		title: "Gourav Chaudhary's Projects",
 		description:
-			"Explore a variety of projects and open-source contributions by Ayush Chugh.",
+			"Explore a variety of projects and open-source contributions by Gourav Chaudhary.",
 		images: ["https://cdn.ayushchugh.com/open-graph/business-card.png"],
-		creator: "@aayushchugh",
-		creatorId: "@aayushchugh",
-		site: "@aayushchugh",
-		siteId: "@aayushchugh",
+		creator: "@Gouravv_c",
+		creatorId: "@Gouravv_c",
+		site: "@Gouravv_c",
+		siteId: "@Gouravv_c",
 	},
 };
 
@@ -161,13 +161,13 @@ export default function ProjectsPage() {
 	const jsonLd = {
 		"@context": "https://schema.org",
 		"@type": "CollectionPage",
-		name: "Ayush Chugh's Projects",
+		name: "Gourav Chaudhary's Projects",
 		description:
-			"Portfolio of projects built by Ayush Chugh, including web applications and open-source contributions.",
+			"Portfolio of projects built by Gourav Chaudhary, including web applications and open-source contributions.",
 		url: "https://ayushchugh.com/projects",
 		author: {
 			"@type": "Person",
-			name: "Ayush Chugh",
+			name: "Gourav Chaudhary",
 			url: "https://ayushchugh.com",
 		},
 		mainEntity: {

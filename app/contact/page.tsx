@@ -9,35 +9,35 @@ import { config } from "../config/config";
 export const metadata: Metadata = {
 	metadataBase: new URL("https://ayushchugh.com"),
 	title: "Contact",
-	description: "Get in touch with Ayush Chugh via email or schedule a meet.",
+	description: "Get in touch with Gourav Chaudhary via email or schedule a meet.",
 	alternates: {
 		canonical: "/contact",
 	},
 	openGraph: {
-		title: "Contact Ayush Chugh",
+		title: "Contact Gourav Chaudhary",
 		description:
-			"Find and connect with Ayush Chugh via email or book a meeting.",
+			"Find and connect with Gourav Chaudhary via email or book a meeting.",
 		url: "https://ayushchugh.com/contact",
-		siteName: "Ayush Chugh's Portfolio",
+		siteName: "Gourav Chaudhary's Portfolio",
 		images: [
 			{
 				url: "https://cdn.ayushchugh.com/open-graph/business-card.png",
 				width: 1200,
 				height: 630,
-				alt: "Contact Ayush Chugh",
+				alt: "Contact Gourav Chaudhary",
 			},
 		],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Contact Ayush Chugh",
-		description: "Connect with Ayush Chugh via email or schedule a meet.",
+		title: "Contact Gourav Chaudhary",
+		description: "Connect with Gourav Chaudhary via email or schedule a meet.",
 		images: ["https://cdn.ayushchugh.com/open-graph/business-card.png"],
-		creator: "@aayushchugh",
-		creatorId: "@aayushchugh",
-		site: "@aayushchugh",
-		siteId: "@aayushchugh",
+		creator: "@Gouravv_c",
+		creatorId: "@Gouravv_c",
+		site: "@Gouravv_c",
+		siteId: "@Gouravv_c",
 	},
 };
 

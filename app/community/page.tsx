@@ -7,36 +7,36 @@ export const metadata: Metadata = {
 	metadataBase: new URL("https://ayushchugh.com"),
 	title: "Community",
 	description:
-		"Join the Ravix Studio community. Connect with Ayush Chugh and contribute to exciting projects.",
+		"Join the Ravix Studio community. Connect with Gourav Chaudhary and contribute to exciting projects.",
 	alternates: {
 		canonical: "/community",
 	},
 	openGraph: {
-		title: "Community | Ayush Chugh",
+		title: "Community | Gourav Chaudhary",
 		description:
-			"Join the Ravix Studio community. Connect with Ayush Chugh and contribute to exciting projects.",
+			"Join the Ravix Studio community. Connect with Gourav Chaudhary and contribute to exciting projects.",
 		url: "https://ayushchugh.com/community",
-		siteName: "Ayush Chugh's Portfolio",
+		siteName: "Gourav Chaudhary's Portfolio",
 		images: [
 			{
 				url: "https://cdn.ayushchugh.com/open-graph/business-card.png",
 				width: 1200,
 				height: 630,
-				alt: "Join Ayush Chugh's Community",
+				alt: "Join Gourav Chaudhary's Community",
 			},
 		],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Community | Ayush Chugh",
+		title: "Community | Gourav Chaudhary",
 		description:
-			"Join the Ravix Studio community and connect with Ayush Chugh.",
+			"Join the Ravix Studio community and connect with Gourav Chaudhary.",
 		images: ["https://cdn.ayushchugh.com/open-graph/business-card.png"],
-		creator: "@aayushchugh",
-		creatorId: "@aayushchugh",
-		site: "@aayushchugh",
-		siteId: "@aayushchugh",
+		creator: "@Gouravv_c",
+		creatorId: "@Gouravv_c",
+		site: "@Gouravv_c",
+		siteId: "@Gouravv_c",
 	},
 };
 

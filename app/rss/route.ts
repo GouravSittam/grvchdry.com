@@ -37,36 +37,31 @@ const generateRSSFeed = (posts: ReturnType<typeof getBlogPosts>) => {
             <guid>${postUrl}</guid>
             <pubDate>${new Date(metadata.publishedAt).toUTCString()}</pubDate>
             
-            ${
-							metadata.coverImage &&
-							`
+            ${metadata.coverImage &&
+				`
               <!-- Inline image in the description -->
               <description><![CDATA[
-                <img src="${metadata.coverImage}" alt="${
-								metadata.title
-							} Cover Image"/>
+                <img src="${metadata.coverImage}" alt="${metadata.title
+				} Cover Image"/>
                 <p>${metadata.summary}</p>
               ]]></description>
               
               <!-- Enclosure for feed readers that look for enclosure tags -->
-              <enclosure url="${
-								metadata.coverImage
-							}" length="0" type="${getMimeTypeForImage(
-								metadata.coverImage
-							)}" />
+              <enclosure url="${metadata.coverImage
+				}" length="0" type="${getMimeTypeForImage(
+					metadata.coverImage
+				)}" />
   
               <!-- Media RSS extension for richer media support -->
-              <media:content url="${
-								metadata.coverImage
-							}" type="${getMimeTypeForImage(
-								metadata.coverImage
-							)}" medium="image">
-                <media:title><![CDATA[${
-									metadata.title
-								} Cover Image]]></media:title>
+              <media:content url="${metadata.coverImage
+				}" type="${getMimeTypeForImage(
+					metadata.coverImage
+				)}" medium="image">
+                <media:title><![CDATA[${metadata.title
+				} Cover Image]]></media:title>
               </media:content>
               `
-						}
+				}
           </item>`;
 		})
 		.join("");
@@ -74,7 +69,7 @@ const generateRSSFeed = (posts: ReturnType<typeof getBlogPosts>) => {
 	return `<?xml version="1.0" encoding="UTF-8" ?>
     <rss version="2.0" xmlns:media="http://search.yahoo.com/mrss/">
     <channel>
-    <title><![CDATA[Ayush Chugh's Blog]]></title>
+    <title><![CDATA[Gourav Chaudhary's Blog]]></title>
     <link>${BLOG_URL}</link>
     <description><![CDATA[Explore blog posts on engineering, design, and product development.]]></description>
     <language>en-us</language>

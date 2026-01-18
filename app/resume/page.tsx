@@ -8,9 +8,9 @@ export const metadata: Metadata = {
 	metadataBase: new URL("https://ayushchugh.com"),
 	title: "Resume",
 	description:
-		"A summary of Ayush Chugh's corporate contributions, skills, and experience as a Full-Stack Developer, including work with Tap Invest, Shri Property, and A2INFINITE.",
+		"A summary of Gourav Chaudhary's corporate contributions, skills, and experience as a Full-Stack Developer, including work with Tap Invest, Shri Property, and A2INFINITE.",
 	keywords: [
-		"Ayush Chugh Resume",
+		"Gourav Chaudhary Resume",
 		"Full Stack Developer Resume",
 		"Web Developer CV",
 		"React Developer Resume",
@@ -23,29 +23,29 @@ export const metadata: Metadata = {
 	openGraph: {
 		type: "article",
 		url: `https://ayushchugh.com/resume`,
-		title: "Ayush Chugh’s Resume",
-		siteName: "Ayush Chugh's Portfolio",
+		title: "Gourav Chaudhary’s Resume",
+		siteName: "Gourav Chaudhary's Portfolio",
 		description:
-			"Detailed resume of Ayush Chugh, Full-Stack Developer, with work experience, projects, and educational background.",
+			"Detailed resume of Gourav Chaudhary, Full-Stack Developer, with work experience, projects, and educational background.",
 		images: [
 			{
 				url: `https://cdn.ayushchugh.com/open-graph/business-card.png`,
 				width: 1200,
 				height: 630,
-				alt: "Ayush Chugh's Resume",
+				alt: "Gourav Chaudhary's Resume",
 			},
 		],
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Ayush Chugh's Resume",
+		title: "Gourav Chaudhary's Resume",
 		description:
-			"Check out Ayush Chugh’s Full-Stack Developer resume, showcasing professional contributions and achievements.",
+			"Check out Gourav Chaudhary’s Full-Stack Developer resume, showcasing professional contributions and achievements.",
 		images: ["https://cdn.ayushchugh.com/open-graph/business-card.png"],
-		creator: "@aayushchugh",
-		creatorId: "@aayushchugh",
-		site: "@aayushchugh",
-		siteId: "@aayushchugh",
+		creator: "@Gouravv_c",
+		creatorId: "@Gouravv_c",
+		site: "@Gouravv_c",
+		siteId: "@Gouravv_c",
 	},
 };
 

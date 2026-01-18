@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 	description:
 		"Read my thoughts on engineering, design, and product development.",
 	keywords: [
-		"Ayush Chugh Blog",
+		"Gourav Chaudhary Blog",
 		"Web Development Blog",
 		"Programming Blog",
 		"Tech Blog",
@@ -24,31 +24,31 @@ export const metadata: Metadata = {
 		canonical: "/blog",
 	},
 	openGraph: {
-		title: "Ayush Chugh's Blog",
+		title: "Gourav Chaudhary's Blog",
 		description:
 			"Explore blog posts on engineering, design, and product development.",
 		url: "https://ayushchugh.com/blog",
-		siteName: "Ayush Chugh's Portfolio",
+		siteName: "Gourav Chaudhary's Portfolio",
 		images: [
 			{
 				url: "https://cdn.ayushchugh.com/open-graph/business-card.png",
 				width: 1200,
 				height: 630,
-				alt: "Ayush Chugh's Blog",
+				alt: "Gourav Chaudhary's Blog",
 			},
 		],
 		type: "website",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Ayush Chugh's Blog",
+		title: "Gourav Chaudhary's Blog",
 		description:
 			"Read blog posts on engineering, design, and product development.",
 		images: ["https://cdn.ayushchugh.com/open-graph/business-card.png"],
-		creator: "@aayushchugh",
-		creatorId: "@aayushchugh",
-		site: "@aayushchugh",
-		siteId: "@aayushchugh",
+		creator: "@Gouravv_c",
+		creatorId: "@Gouravv_c",
+		site: "@Gouravv_c",
+		siteId: "@Gouravv_c",
 	},
 };
 

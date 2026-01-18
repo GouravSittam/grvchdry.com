@@ -10,11 +10,11 @@ import ExperienceCounter from "./components/experience-counter";
 
 export const metadata: Metadata = {
 	metadataBase: new URL("https://ayushchugh.com"),
-	title: "Ayush Chugh",
+	title: "Gourav Chaudhary",
 	description:
 		"I'm a Full Stack Web Developer from India, trying to make the internet a bit cooler one website at a time.",
 	keywords: [
-		"Ayush Chugh",
+		"Gourav Chaudhary",
 		"Full Stack Developer",
 		"Web Developer",
 		"React Developer",
@@ -29,11 +29,11 @@ export const metadata: Metadata = {
 		canonical: "/",
 	},
 	openGraph: {
-		title: "Ayush Chugh",
+		title: "Gourav Chaudhary",
 		description:
 			"I'm a Full Stack Web Developer from India, trying to make the internet a bit cooler one website at a time.",
 		url: "https://ayushchugh.com",
-		siteName: "Ayush Chugh's Portfolio",
+		siteName: "Gourav Chaudhary's Portfolio",
 		images: [
 			{
 				url: "https://cdn.ayushchugh.com/open-graph/business-card.png",
@@ -45,14 +45,14 @@ export const metadata: Metadata = {
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Ayush Chugh",
+		title: "Gourav Chaudhary",
 		description:
 			"I'm a Full Stack Web Developer from India, trying to make the internet a bit cooler one website at a time.",
 		images: ["https://cdn.ayushchugh.com/open-graph/business-card.png"],
-		creator: "@aayushchugh",
-		creatorId: "@aayushchugh",
-		site: "@aayushchugh",
-		siteId: "@aayushchugh",
+		creator: "@Gouravv_c",
+		creatorId: "@Gouravv_c",
+		site: "@Gouravv_c",
+		siteId: "@Gouravv_c",
 	},
 };
 
@@ -60,7 +60,7 @@ export default function Page() {
 	const jsonLd = {
 		"@context": "https://schema.org",
 		"@type": "Person",
-		name: "Ayush Chugh",
+		name: "Gourav Chaudhary",
 		url: "https://ayushchugh.com",
 		image: "https://cdn.ayushchugh.com/open-graph/business-card.png",
 		jobTitle: "Full Stack Web Developer",

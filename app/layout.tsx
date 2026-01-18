@@ -12,17 +12,17 @@ import Footer from "./components/footer";
 export const metadata: Metadata = {
 	metadataBase: new URL("https://ayushchugh.com"),
 	title: {
-		default: "Ayush Chugh",
-		template: "%s | Ayush Chugh",
+		default: "Gourav Chaudhary",
+		template: "%s | Gourav Chaudhary",
 	},
 	description:
 		"Passionate full stack developer from India. On the way to master programming",
 	openGraph: {
-		title: "Ayush Chugh",
+		title: "Gourav Chaudhary",
 		description:
 			"Passionate full stack developer from India. On the way to master programming.",
 		url: "https://ayushchugh.com",
-		siteName: "Ayush Chugh's Portfolio",
+		siteName: "Gourav Chaudhary's Portfolio",
 		locale: "en_US",
 		type: "website",
 		images: [
@@ -46,12 +46,12 @@ export const metadata: Metadata = {
 		},
 	},
 	twitter: {
-		title: "Ayush Chugh",
+		title: "Gourav Chaudhary",
 		card: "summary_large_image",
-		creator: "@aayushchugh",
-		creatorId: "@aayushchugh",
-		site: "@aayushchugh",
-		siteId: "@aayushchugh",
+		creator: "@Gouravv_c",
+		creatorId: "@Gouravv_c",
+		site: "@Gouravv_c",
+		siteId: "@Gouravv_c",
 		description:
 			"Passionate full stack developer from India. On the way to master programming.",
 		images: ["/ogs/ogs-bg.png"],
