@@ -105,7 +105,7 @@ export default function Page() {
 			<header className="mb-6">
 				<div className="flex items-center gap-3 mb-2 flex-wrap">
 					<h1 className='font-medium text-2xl tracking-tight font-["monospace"]'>
-						Sup, I'm Ayush Chugh 👋
+						Sup, I'm Gourav Chaudhary 👋
 					</h1>
 					{config.profile.availableForFreelance && (
 						<span className="inline-flex items-center gap-1.5 px-2.5 py-1 text-xs font-medium bg-green-100 dark:bg-green-900/30 text-green-800 dark:text-green-300 border border-green-200 dark:border-green-800 rounded-full">
@@ -118,7 +118,7 @@ export default function Page() {
 					)}
 				</div>
 				<p className="text-lg prose prose-neutral dark:prose-invert">
-					I'm a Full Stack Web Developer from Mohali, India, with{" "}
+					I'm a Full Stack Web Developer from Kangra, India, with{" "}
 					<ExperienceCounter />, trying to make the internet a bit cooler one
 					website at a time.
 				</p>
@@ -249,7 +249,7 @@ export default function Page() {
 
 			<div className="mb-8 prose prose-neutral dark:prose-invert">
 				<h2>GitHub Contributions</h2>
-				<GitHubCalendar username="aayushchugh" />
+				<GitHubCalendar username="GouravSittam" />
 			</div>
 
 			<Separator />

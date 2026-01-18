@@ -32,7 +32,8 @@ export default function ExperienceCounter() {
 
 	return (
 		<span className="font-medium text-neutral-800 dark:text-neutral-200">
-			{codingYears}+ years of coding and {professionalYears}+ years of professional experience
+			{codingYears}+ years of coding 
+			{/* {professionalYears}+ years of professional experience */}
 		</span>
 	);
 }
