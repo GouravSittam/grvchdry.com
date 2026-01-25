@@ -129,68 +129,30 @@ export default function Page() {
 			<div className="mb-8 prose prose-neutral dark:prose-invert">
 				<h2>Professional Work</h2>
 				<p>
-					I specialize in creating user-friendly digital experiences. Currently,
-					I'm the <strong>Co-founder & CTO</strong> at{" "}
+					I build digital experiences that matter. Recently, as a{" "}
+					<strong>Frontend Developer Trainee</strong> at{" "}
 					<span className="not-prose">
-						<Badge href={config.companies.ravixStudio}>
+						<Badge href={config.companies.GokboruTech}>
 							<Image
-								src={"https://cdn.ayushchugh.com/logos/ravix-dark.png"}
-								alt="Ravix Studio"
-								height={16}
-								width={16}
+								src={"/gokboru.png"}
+								alt="Gokboru Tech"
+								height={20}
+								width={20}
 								className={"pr-1"}
 							/>
-							Ravix Studio
+							Gokboru Tech
 						</Badge>
 					</span>{" "}
-					, a startup where I'm building a lot of SAAS products to learn new
-					stuff and grow. I also work as a <strong>Team Lead</strong> at{" "}
-					<span className="not-prose">
-						<Badge href={config.companies.avenueTicketing}>
-							<Image
-								src={"https://cdn.ayushchugh.com/logos/avenue.jpeg"}
-								alt="Avenue Ticketing"
-								height={16}
-								width={16}
-								className={"pr-1"}
-							/>
-							Avenue Ticketing
-						</Badge>
-					</span>
-					—proudly the youngest team leader there—where I lead a team of 5
-					developers building a ticketing platform for event organizers and
-					attendees.
+					, I didn't just write code—I engineered high-performance full-stack
+					solutions using the MERN stack (React.js, Node.js, MongoDB).
 				</p>
 				<p>
-					Previously, I worked with{" "}
-					<span className="not-prose">
-						<Badge href={config.companies.vibraniumSoft}>
-							<Image
-								src={"https://cdn.ayushchugh.com/logos/vibraniumsoft.jpeg"}
-								alt="Vibranium Soft"
-								height={16}
-								width={16}
-								className={"pr-1"}
-							/>
-							Vibranium Soft
-						</Badge>
-					</span>{" "}
-					where we built a B2B flight booking platform for the travel industry,{" "}
-					<span className="not-prose">
-						<Badge href={config.companies.tapInvest}>
-							<Image
-								src={"https://cdn.ayushchugh.com/logos/tapico.png"}
-								alt="Tap Invest"
-								height={16}
-								width={16}
-								className={"pr-1"}
-							/>
-							Tap Invest
-						</Badge>
-					</span>
-					, where I developed internal dashboard tools and created landing pages
-					for their investment platform. For more details about my experience,
-					check out my <Link href="/resume">resume</Link>.
+					I architected lightning-fast React interfaces and robust RESTful APIs,
+					optimizing every millisecond to slash load times while deploying
+					scalable MongoDB schemas. From crushing Agile sprints to mastering
+					modern JavaScript (ES6+), I focused on shipping production-level code
+					that’s as efficient as it is elegant. Want the full deep dive? Check out
+					my <Link href="/resume">resume</Link>.
 				</p>
 			</div>
 
@@ -199,18 +161,17 @@ export default function Page() {
 			<div className="mb-8 prose prose-neutral dark:prose-invert">
 				<h2>What Makes Me Different</h2>
 				<p>
-					I'm not just another developer. I take full ownership of every project
-					I work on, which is how I became the youngest team leader at Avenue
-					Ticketing. I approach problems with both a technical and business
-					mindset—I understand that great code means nothing if it doesn't solve
-					real problems.
+					I’m not just a developer—I’m a product builder. My radical ownership of
+					outcomes is what fast-tracked me to become the youngest Team Lead in my
+					previous role. I bridge the gap between complex engineering and
+					business goals, because I know that clean code implies nothing if it
+					doesn't solve real-world problems.
 				</p>
 				<p>
-					While I embrace AI-assisted development, I do it differently. I
-					leverage AI to build powerful systems faster, but always with proper
-					supervision, code review, and architectural oversight. This allows me
-					to maintain quality while maximizing productivity—the best of both
-					worlds.
+					I don't just use AI; I master it. I treat AI as a force multiplier to
+					architect robust systems at breakneck speeds, fusing 10x velocity with
+					human architectural rigor. I build fast, break nothing, and ship
+					quality features that stand the test of scale.
 				</p>
 			</div>
 

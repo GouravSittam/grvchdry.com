@@ -284,7 +284,7 @@ const resumeData = {
 			logo: "",
 			degree: "10th, School",
 			period: "2021 - 2022",
-			location: "Chandigarh, India",
+			location: "Kangra, India",
 		},
 	],
 	volunteering: [

@@ -39,7 +39,7 @@ export const metadata: Metadata = {
 		title: "Gourav Chaudhary's Projects",
 		description:
 			"Explore a variety of projects and open-source contributions by Gourav Chaudhary.",
-		images: ["https://cdn.ayushchugh.com/open-graph/business-card.png"],
+		// images: ["https://cdn.ayushchugh.com/open-graph/business-card.png"],
 		creator: "@Gouravv_c",
 		creatorId: "@Gouravv_c",
 		site: "@Gouravv_c",
@@ -48,6 +48,66 @@ export const metadata: Metadata = {
 };
 
 const projectsData = [
+	{
+		project: "DevTinder – Developer Matching App",
+		description:
+			"Built a responsive matchmaking web application for developers, featuring Tinder-inspired swipe mechanics to facilitate profile discovery based on technical skills and professional interests. Deployed secure user authentication utilizing JWT tokens, Google OAuth 2.0 integration, and bcrypt password hashing.",
+		technologies: [
+			"React.js",
+			"Node.js",
+			"Express.js",
+			"Tailwind CSS",
+			"MongoDB",
+			"WebSocket",
+			"Docker",
+			"Authentication",
+			"WebRTC",
+			"CI/CD",
+		],
+		website: "https://github.com/GouravSittam",
+		category: "Full Stack",
+		workType: "Personal",
+		logo: "",
+	},
+	{
+		project: "Neighborly – Community Help Request Platform",
+		description:
+			"Spearheaded a data-driven neighborhood matching platform analyzing multiple lifestyle factors through a multi-weighted scoring algorithm. Orchestrated an automated ETL data pipeline with real-time preference matching and intelligent caching strategies. Crafted a responsive, mobile-first UI with Radix UI primitives and shadcn components.",
+		technologies: [
+			"React.js",
+			"TypeScript",
+			"Node.js",
+			"Express.js",
+			"Tailwind CSS",
+			"Radix UI",
+			"Vite",
+			"Tanstack Query",
+		],
+		website: "https://github.com/GouravSittam",
+		category: "Full Stack",
+		workType: "Personal",
+		logo: "",
+	},
+	{
+		project: "CipherSQLStudio – SQL Learning Platform",
+		description:
+			"Architected a browser-based SQL learning platform empowering students to practice queries with real-time execution, AI-driven hints, and schema-isolated PostgreSQL sandbox. Developed a Brutalist Gaming Theme interface with React.js, SCSS, and Monaco Editor. Integrated Gemini LLM API for intelligent hint generation without exposing solutions.",
+		technologies: [
+			"React.js",
+			"Node.js",
+			"Express.js",
+			"MongoDB Atlas",
+			"PostgreSQL",
+			"Gemini API",
+			"Monaco Editor",
+			"SCSS",
+			"Vite",
+		],
+		website: "https://github.com/GouravSittam",
+		category: "Full Stack",
+		workType: "Personal",
+		logo: "",
+	},
 	{
 		project: "Worldtravels (2k+ active users daily)",
 		logo: "https://cdn.ayushchugh.com/logos/worldtravels.png",
