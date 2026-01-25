@@ -8,6 +8,7 @@ interface EducationItemProps {
     degree: string;
     period: string;
     location: string;
+    website?: string;
   };
 }
 
@@ -24,7 +25,18 @@ const EducationItem: FC<EducationItemProps> = ({ edu }) => {
             className="mr-4"
           />
         )}
-        <span className={edu.logo ? "ml-2" : ""}>{edu.institution}</span>
+        {edu.website ? (
+          <a
+            href={edu.website}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="ml-2 hover:underline"
+          >
+            {edu.institution}
+          </a>
+        ) : (
+          <span className={edu.logo ? "ml-2" : ""}>{edu.institution}</span>
+        )}
       </h3>
       <p className="text-neutral-600 dark:text-neutral-400 text-sm">
         {edu.degree} | {edu.period} | {edu.location}

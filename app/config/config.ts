@@ -14,6 +14,7 @@ export const config = {
 	],
 	companies: {
 		// ravixStudio: "https://x.com/ravixstudio/",
+		GokboruTech: "https://gokboru.in/",
 		ravixStudio: "https://ravixstudio.com/",
 		avenueTicketing: "https://avenueticket.com/",
 		vibraniumSoft:
