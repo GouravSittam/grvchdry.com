@@ -11,6 +11,8 @@
     "lint": "pnpm biome lint --write ./app"
   },
   "dependencies": {
+    "@fontsource/jetbrains-mono": "^5.2.8",
+    "@fontsource/space-grotesk": "^5.2.10",
     "@next/third-parties": "^14.2.11",
     "@phosphor-icons/react": "^2.1.7",
     "@tailwindcss/typography": "^0.5.10",

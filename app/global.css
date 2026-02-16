@@ -49,7 +49,7 @@ j .prose a {
 	content: "#";
 }
 
-.prose *:hover > .anchor {
+.prose *:hover>.anchor {
 	@apply visible;
 }
 
@@ -86,7 +86,7 @@ h4 {
 	@apply font-medium;
 }
 
-.prose > :first-child {
+.prose> :first-child {
 	/* Override removing top margin, causing layout shift */
 	margin-top: 1.25em !important;
 	margin-bottom: 1.25em !important;
@@ -97,8 +97,10 @@ pre::-webkit-scrollbar {
 }
 
 pre {
-	-ms-overflow-style: none; /* IE and Edge */
-	scrollbar-width: none; /* Firefox */
+	-ms-overflow-style: none;
+	/* IE and Edge */
+	scrollbar-width: none;
+	/* Firefox */
 }
 
 /* Remove Safari input shadow on mobile */
@@ -121,7 +123,7 @@ table {
 	white-space: nowrap;
 }
 
-.prose .callout > p {
+.prose .callout>p {
 	margin: 0 !important;
 }
 
@@ -130,30 +132,38 @@ table {
 }
 
 @media print {
+
 	body,
 	html {
 		width: 100%;
 		margin-top: 10px;
 		padding: 0;
-		background-color: #ffffff; /* Ensures a white background */
+		background-color: #ffffff;
+		/* Ensures a white background */
 	}
 
 	.no-print {
-		display: none; /* Hides elements with the 'no-print' class during printing */
+		display: none;
+		/* Hides elements with the 'no-print' class during printing */
 	}
 
 	/* Adjust the font size, visibility, or other properties for print */
 	h1,
 	h2,
 	h3 {
-		font-size: 12pt; /* Example: Change heading sizes */
-		color: #000000; /* Ensure black text for better print visibility */
+		font-size: 12pt;
+		/* Example: Change heading sizes */
+		color: #000000;
+		/* Ensure black text for better print visibility */
 	}
+
 	.margin-10 {
 		margin-top: 30px;
 	}
+
 	.page-break {
-		page-break-before: always; /* Forces a page break before the element */
+		page-break-before: always;
+		/* Forces a page break before the element */
 	}
 }
 
