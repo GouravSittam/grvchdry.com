@@ -1,7 +1,7 @@
 replicaCount: 2
 
 image:
-  repository: 123456789012.dkr.ecr.ap-south-1.amazonaws.com/grvchdry-frontend
+  repository: 440165694018.dkr.ecr.ap-south-1.amazonaws.com/grvchdry-frontend
   pullPolicy: IfNotPresent
   tag: "latest"
 
@@ -13,7 +13,7 @@ serviceAccount:
   create: true
   annotations:
     # Used for IAM Roles for Service Accounts (IRSA)
-    eks.amazonaws.com/role-arn: arn:aws:iam::123456789012:role/GrvchdryFrontendRole
+    eks.amazonaws.com/role-arn: arn:aws:iam::440165694018:role/GrvchdryFrontendRole
   name: "grvchdry-frontend-sa"
 
 podAnnotations:
@@ -45,11 +45,13 @@ ingress:
     # AWS ALB Ingress Controller configurations
     alb.ingress.kubernetes.io/scheme: internet-facing
     alb.ingress.kubernetes.io/target-type: ip
-    alb.ingress.kubernetes.io/certificate-arn: arn:aws:acm:ap-south-1:123456789012:certificate/uuid
-    alb.ingress.kubernetes.io/listen-ports: '[{"HTTP": 80}, {"HTTPS":443}]'
-    alb.ingress.kubernetes.io/ssl-redirect: "443"
+    # Uncomment below once you have a domain and ACM certificate:
+    # alb.ingress.kubernetes.io/certificate-arn: arn:aws:acm:ap-south-1:440165694018:certificate/uuid
+    # alb.ingress.kubernetes.io/listen-ports: '[{"HTTP": 80}, {"HTTPS":443}]'
+    # alb.ingress.kubernetes.io/ssl-redirect: "443"
+    alb.ingress.kubernetes.io/listen-ports: '[{"HTTP": 80}]'
   hosts:
-    - host: grvchdry.com
+    - host: "" # Empty host matches all requests — access via ALB DNS
       paths:
         - path: /
           pathType: Prefix
