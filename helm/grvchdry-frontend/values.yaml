@@ -45,13 +45,14 @@ ingress:
     # AWS ALB Ingress Controller configurations
     alb.ingress.kubernetes.io/scheme: internet-facing
     alb.ingress.kubernetes.io/target-type: ip
-    # Uncomment below once you have a domain and ACM certificate:
-    # alb.ingress.kubernetes.io/certificate-arn: arn:aws:acm:ap-south-1:440165694018:certificate/uuid
-    # alb.ingress.kubernetes.io/listen-ports: '[{"HTTP": 80}, {"HTTPS":443}]'
-    # alb.ingress.kubernetes.io/ssl-redirect: "443"
-    alb.ingress.kubernetes.io/listen-ports: '[{"HTTP": 80}]'
+    alb.ingress.kubernetes.io/certificate-arn: arn:aws:acm:ap-south-1:440165694018:certificate/c9bd9f56-0ba5-4576-95a2-979b11e74fe5
+    alb.ingress.kubernetes.io/listen-ports: '[{"HTTP": 80}, {"HTTPS":443}]'
   hosts:
-    - host: "" # Empty host matches all requests — access via ALB DNS
+    - host: "grvchdry.dev"
+      paths:
+        - path: /
+          pathType: Prefix
+    - host: "www.grvchdry.dev"
       paths:
         - path: /
           pathType: Prefix
