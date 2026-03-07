@@ -11,6 +11,7 @@ const nextConfig = {
 	},
 	// Disable trailing slash to match our canonical URLs
 	trailingSlash: false,
+	output: "standalone",
 	// async redirects() {
 	// 	if (!process.env.POSTGRES_URL) {
 	// 		return [];

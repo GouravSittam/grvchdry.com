@@ -1,0 +1,30 @@
+grafana:
+  adminPassword: "admin" # Change this in a real prod environment
+  ingress:
+    enabled: true
+    ingressClassName: "alb"
+    annotations:
+      alb.ingress.kubernetes.io/scheme: internet-facing
+      alb.ingress.kubernetes.io/target-type: ip
+    hosts:
+      - grafana.grvchdry.com # Present this dynamic host
+  
+  # Provision a default dashboard for Next.js metrics (example)
+  dashboards:
+    default:
+      nextjs-dashboard:
+        # Example community dashboard ID (e.g., Node.js/Next.js metrics)
+        gnetId: 1860
+        revision: 33
+        datasource: Prometheus
+
+prometheus:
+  prometheusSpec:
+    # Ensure Prometheus discovers ServiceMonitors across all namespaces
+    serviceMonitorSelectorNilUsesHelmValues: false
+    serviceMonitorSelector: {}
+    serviceMonitorNamespaceSelector: {}
+
+# Enable node exporter to scrape EC2 instance metrics (CPU, Memory, Disk)
+nodeExporter:
+  enabled: true

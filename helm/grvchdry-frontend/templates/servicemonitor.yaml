@@ -1,0 +1,16 @@
+apiVersion: monitoring.coreos.com/v1
+kind: ServiceMonitor
+metadata:
+  name: {{ include "grvchdry-frontend.fullname" . }}
+  labels:
+    {{- include "grvchdry-frontend.labels" . | nindent 4 }}
+    # This label is critical. The Prometheus operator looks for it to know to scrape this monitor.
+    release: prometheus 
+spec:
+  selector:
+    matchLabels:
+      {{- include "grvchdry-frontend.selectorLabels" . | nindent 6 }}
+  endpoints:
+    - port: http
+      path: /metrics
+      interval: 15s
