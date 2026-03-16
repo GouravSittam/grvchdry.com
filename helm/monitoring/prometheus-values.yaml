@@ -1,56 +1,57 @@
 grafana:
-  enabled: false
+  enabled: true
+  adminPassword: "admin123"
+  persistence:
+    enabled: false
+  resources:
+    requests:
+      cpu: 20m
+      memory: 64Mi
+    limits:
+      cpu: 100m
+      memory: 128Mi
 
 prometheus:
+  enabled: true
   prometheusSpec:
     serviceMonitorSelectorNilUsesHelmValues: false
     serviceMonitorSelector: {}
     serviceMonitorNamespaceSelector: {}
-    retention: 2d
+    retention: 1d
     resources:
       requests:
-        cpu: 80m
-        memory: 120Mi
+        cpu: 50m
+        memory: 128Mi
       limits:
-        cpu: 150m
-        memory: 200Mi
+        cpu: 100m
+        memory: 256Mi
 
 prometheusOperator:
+  enabled: true
   resources:
     requests:
-      cpu: 30m
-      memory: 48Mi
+      cpu: 10m
+      memory: 24Mi
     limits:
-      cpu: 80m
-      memory: 96Mi
+      cpu: 20m
+      memory: 48Mi
   admissionWebhooks:
+    enabled: false
     patch:
-      resources:
-        requests:
-          cpu: 10m
-          memory: 20Mi
-        limits:
-          cpu: 30m
-          memory: 40Mi
+      enabled: false
 
 alertmanager:
   enabled: false
 
 nodeExporter:
+  enabled: false
+
+kube-state-metrics:
   enabled: true
   resources:
     requests:
-      cpu: 10m
-      memory: 16Mi
+      cpu: 5m
+      memory: 10Mi
     limits:
-      cpu: 30m
-      memory: 32Mi
-
-kube-state-metrics:
-  resources:
-    requests:
       cpu: 10m
-      memory: 16Mi
-    limits:
-      cpu: 30m
-      memory: 32Mi
+      memory: 20Mi
