@@ -1,0 +1,15 @@
+apiVersion: eksctl.io/v1alpha5
+kind: ClusterConfig
+
+metadata:
+  name: grvchdry-prod-cluster
+  region: ap-south-1
+
+managedNodeGroups:
+  - name: ng-medium-spot-pd
+    instanceType: t3.small
+    spot: true
+    desiredCapacity: 1
+    minSize: 1
+    maxSize: 2
+    maxPodsPerNode: 110
