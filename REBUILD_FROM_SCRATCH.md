@@ -341,10 +341,14 @@ kubectl get pods -n monitoring
 Access Grafana locally:
 
 ```bash
-kubectl port-forward svc/prometheus-grafana 8080:80 -n monitoring
-# Open http://localhost:8080
-# Username: admin  |  Password: admin
+kubectl port-forward --address 127.0.0.1 svc/prometheus-grafana 3000:3000 -n monitoring
+# Open http://127.0.0.1:3000
+# Username: admin  |  Password: admin123
 ```
+
+If the Grafana UI opens but the dashboard panels keep spinning, wait until the Prometheus pod in `kubectl get pods -n monitoring` shows `Running`.
+
+If Grafana says it failed to load application files, restart the port-forward command and hard-refresh the page so the browser fetches the current JS bundles.
 
 ---
 
