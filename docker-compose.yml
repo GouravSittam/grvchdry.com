@@ -1,6 +1,6 @@
 services:
   portfolio_nextjs:
-    image: gourav-portfolio
+    image: gouravsittam/gourav-portfolio:latest
     container_name: gourav-portfolio
     working_dir: /app
     ports:
@@ -11,6 +11,3 @@ services:
     env_file:
       - path: .env
         required: false
-    build:
-      context: .
-      dockerfile: Dockerfile
