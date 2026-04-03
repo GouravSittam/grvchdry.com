@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(icacls:*)",
+      "Bash(takeown:*)",
+      "Bash(powershell:*)",
+      "Bash(ssh:*)"
+    ]
+  }
+}

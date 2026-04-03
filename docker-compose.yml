@@ -1,17 +1,16 @@
 services:
-  ayushchugh_com_nextjs:
-    image: ayushchugh.com
-    container_name: ayushchugh.com
+  portfolio_nextjs:
+    image: gourav-portfolio
+    container_name: gourav-portfolio
     working_dir: /app
     ports:
       - "3001:3000"
-    expose:
-      - "3000"
-    command: "npm start"
+    restart: unless-stopped
     environment:
       NODE_ENV: production
     env_file:
-      - .env
+      - path: .env
+        required: false
     build:
       context: .
       dockerfile: Dockerfile

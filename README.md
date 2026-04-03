@@ -33,12 +33,14 @@ A minimalist, high-performance portfolio website built with Next.js, Tailwind CS
 ### Installation
 
 1. Clone the repository:
+
    ```bash
    git clone https://github.com/GouravSittam/portfolio.git
    cd portfolio
    ```
 
 2. Install dependencies:
+
    ```bash
    bun install
    # or
@@ -46,6 +48,7 @@ A minimalist, high-performance portfolio website built with Next.js, Tailwind CS
    ```
 
 3. Run the development server:
+
    ```bash
    bun run dev
    ```
@@ -60,6 +63,37 @@ You can customize the portfolio by updating the configuration file at `app/confi
 - Social links
 - Navigation menu items
 - Company/Work experience URLs
+
+## ☁️ Deployment
+
+For a production deployment on AWS EC2, follow the step-by-step guide in `DEPLOY_EC2.md`.
+
+### One-command deploy on EC2
+
+Use the deployment helper script:
+
+```bash
+bash scripts/deploy-ec2.sh
+```
+
+Optional environment variables:
+
+```bash
+APP_DIR=/home/ubuntu/app BRANCH=main bash scripts/deploy-ec2.sh
+```
+
+### Auto-deploy with GitHub Actions
+
+This repo includes a workflow at `.github/workflows/deploy-ec2.yml` that deploys on every push to `main` (and can also be run manually).
+
+Add these GitHub repository secrets before enabling it:
+
+- `EC2_HOST` (example: 13.52.10.1)
+- `EC2_USER` (example: ubuntu)
+- `EC2_SSH_KEY` (private SSH key content)
+- `EC2_PORT` (optional, defaults to 22)
+- `EC2_APP_DIR` (optional, default `/home/ubuntu/app`)
+- `EC2_BRANCH` (optional, default `main`)
 
 ## 📝 Blog
 
